@@ -1,13 +1,15 @@
 #! /bin/bash
-source ../git_password.sh
+source ../git_credentials.sh
 repoName=$1
+
 while [ -z "$repoName" ]
 do
    echo 'Provide a repository name'
    read -r -p $'Repository name:' repoName
 done
 
-echo "# $repoName - Bash script to create README.md file, initialize a .git repository, commit create remote repo and push to https://www.github.com" >> README.md
+echo "# $repoName" >> README.md
+echo "Bash script to create README.md file, initialize a .git repository, commit create remote repo and push to https://www.github.com" >> README.md
 
 git init
 git add .
