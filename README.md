@@ -1,6 +1,7 @@
 # script-repo
 
-Bash script to create README.md file, initialize a .git repository, commit create remote repo and push to https://www.github.com
+Bash script to create README.md file, initialize a .git repository, commit create remote repo and push to https://www.github.com - 
+
 Execute from command line by passing the repo name as a parameter.
 You will need an external git_credentials.sh file containing your github username and access token.
 
