@@ -1,6 +1,6 @@
 #! /bin/bash
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-source "$DIR/../git_credentials.sh"
+source "$DIR/git_credentials.sh"
 repoName=$1
 
 while [ -z "$repoName" ]
